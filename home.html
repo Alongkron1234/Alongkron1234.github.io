@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">   
+<title>Portfolio.</title>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("qkuN_d9IX5RaNU3_J");
+      })();
+    </script>
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark  shadow-none fixed-top">
+    <div class="container Navbar-width">
+      <a class="navbar-brand fw-bold mb-2 ms-2" href="#" style="color: #1e30f3;">Alongkorn Kaewprom.</a>
+
+      <button class="navbar-toggler" type="button" data-mdb-toggle="offcanvas" data-mdb-target="#offcanvasRight"
+      aria-controls="offcanvasRight">
+      <i class="fa-solid fa-bars-staggered text-black"></i>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active me-4 fw-bold text-black" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me-4 fw-bold text-black" aria-current="page" href="#Skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4 fw-bold text-black" href="#Education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4 fw-bold text-black" href="#Project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-4 fw-bold text-black" href="#Contact">Contact</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel"></h5>
+      <button type="button" class="btn-close text-reset" data-mdb-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav ">
+        <li class="nav-item mx-auto">
+          <a class="nav-link fw-bold text-black active" aria-current="page" href="#hero">Home</a>
+        </li>
+        <li class="nav-item  mx-auto">
+          <a class="nav-link fw-bold text-black" href="#Skills">Skills</a>
+        </li>
+        <li class="nav-item  mx-auto">
+          <a class="nav-link fw-bold text-black" href="#Education">Education</a>
+        </li>
+        <li class="nav-item  mx-auto">
+          <a class="nav-link fw-bold text-black" href="#Project">Project</a>
+        </li>
+        <li class="nav-item  mx-auto">
+          <a class="nav-link fw-bold text-black" href="#Contact">Contact</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-lg-5 d-lg-flex flex-lg-column justify-content-center align-items-center pt-5 pt-lg-0 order-2 order-lg-1">
+          <div class="mb-5 mb-lg-0 text-center text-lg-start">
+            <h1 class="display-3 lh-1 mb-4 fw-bolder text-custom-color">Hi I'm Ball</h1>
+            <h1 class="display-5 lh-1 mb-4 fw-bolder text-custom-color">I'm a <span class="auto-type">Programmer</span></h1>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                var typed = new Typed(".auto-type", {
+                    strings: ["Web Developer", "UX/UI Designer", "Data Science"],
+                    typeSpeed: 200,
+                    backSpeed: 200,
+                    loop: true
+                });
+            </script>
+            <p class="lead fw-normal text-muted mb-5">I am a first-year Computer Engineering student at King Mongkut's University of Technology Thonburi. My passion for coding and building websites has continued to grow since my high school days.</p>
+            <div>
+              <a href="#" class="me-4 text-reset">
+                <i class="fab fa-instagram fa-xl" style="color: #ac2bac;"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-google fa-xl text-success"></i>
+              </a>
+              <a href="#" class="me-4 text-reset">
+                <i class="fab fa-github fa-xl text-black"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-5 d-lg-flex flex-lg-column align-items-center order-1 order-lg-2 text-center">
+          <div class="home-img">
+            <img src="https://cdn.discordapp.com/attachments/888731474482843670/1295037845194670253/expansion_20241013215742033.jpg?ex=670e82fa&is=670d317a&hm=450f46a8885fe9d05ec434858b769e02126b21d8a7d1a8f18ff3bad10f5a5e5d&" alt="Profile Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="Skills bg-light py-5" id="Skills">
+  <div class="section-title text-center">
+    <h2 class="display-5 fw-bolder mb-4 text-black">
+      <span class="text-gradient d-inline text-custom-color">My Skills</span>
+    </h2>
+  </div>
+
+  <div class="container d-flex justify-content-center flex-wrap">
+    <!-- Frontend Skills -->
+    <div class="skill-category text-center">
+      <h3 class="fw-bold text-black">Frontend</h3>
+      <div class="d-flex justify-content-center flex-wrap">
+        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" class="rounded-circle shadow-4-strong m-3" alt="HTML" style="width: 100px; height: 100px;" />
+        <img src="https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3-thumbnail.png" class="rounded-circle shadow-4-strong m-3" alt="CSS" style="width: 100px; height: 100px;" />
+        <img src="https://www.code2inspire.com/icons/jsIcon.png" class="rounded-circle shadow-4-strong m-3" alt="JavaScript" style="width: 100px; height: 100px;" />
+      </div>
+    </div>
+    
+
+    <div class="skill-category text-center">
+      <h3 class="fw-bold text-black">Backend</h3>
+      <div class="d-flex justify-content-center flex-wrap">
+        <img src="https://cdn.discordapp.com/attachments/1062268027976032298/1295441557251424359/imfast.png?ex=670ea977&is=670d57f7&hm=895ddc6ff207ad36a6282f739aa80548cf0027c6c520e75fc26c9f76b63be7f3&" class="rounded-circle shadow-4-strong m-3" alt="Node.js" style="width: 100px; height: 100px;" />
+        <img src="https://cdn.discordapp.com/attachments/1062268027976032298/1295441556404179027/image-removebg-preview_7.png?ex=670ea977&is=670d57f7&hm=b36af39ce6ec4267651eac7e424d676fea6d179593db46c2cbdebbde8b417057&" class="rounded-circle shadow-4-strong m-3" alt="Python" style="width: 100px; height: 100px;" />
+      </div>
+    </div>
+
+
+    <div class="skill-category text-center">
+      <h3 class="fw-bold text-black">Data Science</h3>
+      <div class="d-flex justify-content-center flex-wrap">
+        <img src="https://cdn.discordapp.com/attachments/1062268027976032298/1295441556836323380/image-removebg-preview_8.png?ex=670ea977&is=670d57f7&hm=a2ec6cb70cb26f56a2bd4470540da05c1357ab208da42b541ef343bd1661b7f3&" class="rounded-circle shadow-4-strong m-3" alt="Pandas" style="width: 100px; height: 100px;" />
+        <img src="https://user-images.githubusercontent.com/40668801/42043955-fbb838a2-7af7-11e8-9795-7f890e871d13.png" class="rounded-circle shadow-4-strong m-3" alt="NumPy" style="width: 100px; height: 100px;" />
+        <img src="https://seeklogo.com/images/M/matplotlib-logo-7676870AC0-seeklogo.com.png" class="rounded-circle shadow-4-strong m-3" alt="Matplotlib" style="width: 100px; height: 100px;" />
+      </div>
+    </div>
+
+    <div class="skill-category text-center">
+      <h3 class="fw-bold text-black">DevOps</h3>
+      <div class="d-flex justify-content-center flex-wrap">
+        <img src="https://static-00.iconduck.com/assets.00/git-icon-2048x2048-juzdf1l5.png" class="rounded-circle shadow-4-strong m-3" alt="Adobe XD" style="width: 100px; height: 100px;" />
+        <img src="https://static-00.iconduck.com/assets.00/docker-icon-2048x2048-5mc7mvtn.png" class="rounded-circle shadow-4-strong m-3" alt="Sketch" style="width: 100px; height: 100px;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="Education bg-light py-5"  id="Education">
+  <div class="section-title text-center">
+    <h2 class="display-5 fw-bolder mb-4 text-black">
+      <span class="text-gradient d-inline text-custom-color">Education</span>
+    </h2>
+    <div class="containerr">
+      <div class="card">
+        <img src="https://cdn.discordapp.com/attachments/1062268027976032298/1295441610514894858/pys.png?ex=670ea984&is=670d5804&hm=f769570677185e68cf4ffa7d07641d76d0c97f5d7f6e5beba059b066145330ca&" alt="Panyasak Bangbon">
+        <div class="intro">
+          <h3 class="text-gradient d-inline text-custom-color">Elementary School</h3>
+          <p>
+            <span>Panyasak School</span><br>Since 2000 - 2001
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.discordapp.com/attachments/1062268027976032298/1295441610204512307/kpt.png?ex=670ea984&is=670d5804&hm=1f2a8ec4eb6400bd13ce7995223dff8f47981dc4df5ece3775cd5bbfd387eaeb&" alt="Kornpitacksuksa">
+        <div class="intro">
+          <h3 class="text-gradient d-inline text-custom-color">Junior <br>High school</h3>
+          <p>
+            <span>Kornpitacksuksa School</span><br> Math-Science <br> Since 2000 - 2001
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.discordapp.com/attachments/1062268027976032298/1295441607566426192/sw2.png?ex=670ea983&is=670d5803&hm=b202670c497cb3696d457669eaae6121aa8a8cc2e85e83db797e07cc856bab23&" alt="Suksanareewittaya">
+        <div class="intro">
+          <h3 class="text-gradient d-inline text-custom-color">High School</h3>
+          <p>
+            <span>Suksanareewittaya School</span><br> Math-Science and Technology <br> Since 2000 - 2001
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.discordapp.com/attachments/1062268027976032298/1295441609747464274/kmuttt.png?ex=670ea983&is=670d5803&hm=eb39cca216bce932c0450bb58060fade7176b55080fc9565fec094395e6c8783&" alt="Panyasak Bangbon">
+        <div class="intro">
+          <h3 class="text-gradient d-inline text-custom-color">Computer Engineering</h3>
+          <p>
+            <span>King Mongkut's University of Technology Thonburi</span> <br>Since 2024 - Now
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Project">
+  <div class="container px-5 py-5">
+    <h2 class="display-5 fw-bolder mb-5 text-black text-center">
+      <span class="text-gradient d-inline text-custom-color">All My Projects</span>
+    </h2>
+    <div class="row gx-5 align-items-center order-1 order-lg-2">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <img class="img-fluid mb-3 mb-lg-0 border border-secondary border-3" src="https://cdn.discordapp.com/attachments/1062268027976032298/1295443491572289747/image.png?ex=670eab44&is=670d59c4&hm=750b202bb32c7f9d3f23a73a693a6cf091713dcc9adaeeb98c7cde5e21fd5d3f&" alt="AvocadoRipnessPredictor">
+      </div>
+      <div class="col-lg-6 order-2 order-lg-1">
+        <h1 class="fw-bold display-6 mt-2 text-custom-color">AvocadoRipnessPredictor</h1>
+        <p class="text-black lead fw-normal mb-4 ms-2">This is an AI classification model designed to answer the question: 'What variety is this avocado, and how many days until it ripens?' The model was built using Fastai’s Datablock and Resnet34 architecture, achieving an accuracy of 82%. It has been deployed on Hugging Face Spaces.</p>
+        <div class="d-inline-flex">
+          <a href="#">
+            <i class="fas fa-globe me-3 fa-2x" style="color: #1e30f3;"></i>
+          </a>
+          <a href="#">
+            <p class="me-3 fs-5" style="color: #1e30f3;">Demo</p>
+          </a>
+          <a href="#">
+            <i class="fab fa-github me-3 fa-2x" style="color: #1e30f3;"></i>
+          </a>
+          <a href="#">
+            <p class="me-3 fs-5" style="color: #1e30f3;">View more</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row gx-5 align-items-center">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <h1 class="fw-bold display-6 mt-2 text-custom-color">Lane Detection Robot</h1>
+        <p class="text-black lead fw-normal mb-4 ms-2">A model of an autonomous driving system that detects road lanes from a camera or video input by distinguishing the road colors through computer processing. The data is then sent to a NodeMCU board for further processing before transmitting signals to the robot to execute the commands.</p>
+        <div class="d-inline-flex">
+          <a href="">
+            <i class="fas fa-globe me-3 fa-2x" style="color: #1e30f3;"></i>
+          </a>
+          <a href="">
+            <p class="me-3 fs-5" style="color: #1e30f3;">Demo</p>
+          </a>
+          <a href="">
+            <i class="fab fa-github me-3 fa-2x" style="color: #1e30f3;"></i>
+          </a>
+          <a href="">
+            <p class="me-3 fs-5" style="color: #1e30f3;">View more</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img class="img-fluid mb-3 mb-lg-0 border border-secondary border-3" src="https://cdn.discordapp.com/attachments/1062268027976032298/1295386681020780595/image.png?ex=670e765b&is=670d24db&hm=d7729776590226c1da9df2be4999dd430653340ea9e2c0491ddc4fc77f490679&" alt="Lane Detection Robot">
+      </div>
+    </div>
+    <br>
+    <br>
+
+
+    <div class="row gx-5 align-items-center order-1 order-lg-2">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <img class="img-fluid mb-3 mb-lg-0 border border-secondary border-3" src="https://cdn.discordapp.com/attachments/888731474482843670/1295385765366468628/image.png?ex=670e7581&is=670d2401&hm=2f8656f0782d1549010b16ee9ed94cfc7f6f935c28d02dd7e5437116f15c595b&" alt="AvocadoRipnessPredictor">
+      </div>
+      <div class="col-lg-6 order-2 order-lg-1">
+        <h1 class="fw-bold display-6 mt-2 text-custom-color">Garbage Collection μShipr</h1>
+        <p class="text-black lead fw-normal mb-4 ms-2">This project features an autonomous waste-collecting boat that utilizes AI to sort and identify specific types of waste to be collected. Once the boat reaches its capacity, it automatically returns to its starting point. Currently in the simulation phase, the model requires further development in the future.</p>
+        <div class="d-inline-flex">
+          <a href="#">
+            <i class="fas fa-globe me-3 fa-2x" style="color: #1e30f3;"></i>
+          </a>
+          <a href="#">
+            <p class="me-3 fs-5" style="color: #1e30f3;">Demo</p>
+          </a>
+          <a href="#">
+            <i class="fab fa-github me-3 fa-2x" style="color: #1e30f3;"></i>
+          </a>
+          <a href="#">
+            <p class="me-3 fs-5" style="color: #1e30f3;">View more</p>
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+<section>
+<div class="py-5 bg-light">
+  <div class="container px-5 my-5">
+      <div class="row gx-5 justify-content-center">
+          <div class="col-lg-10 col-xl-7">
+              <div class="text-center">
+                <span id="auto-type"  class="fs-4 mb-4 fst-italic">"Your time is limited, so don't waste it living someone else's life."</span>
+                  
+                  <div class="d-flex align-items-center justify-content-center">
+                      
+                      <div class="fw-bold text-black">
+                          -Alongkorn Kaewprom-
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section id="Contact"> 
+  <div class="container px-5 py-5 d-flex justify-content-center align-items-center">
+    <div class="col-lg-6">
+      <div class=" row g-2">
+        <h2 class="display-5 fw-bolder mb-4 text-black text-center text-custom-color">Contact Me</h2>
+        <div class="form">
+          <label for="exampleInputEmail1" class="form-label text-black">Full Name</label>
+          <input type="text" class="form-control" placeholder="Enter Your Name" aria-describedby="emailHelp" id="name">
+        </div>
+
+        
+          <div class="form">
+            <label for="formGroupExampleInput" class="form-label text-black">Email</label>
+            <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="First name"  id="email">
+          </div>
+        
+        
+        <div class="form">
+          <label for="formGroupExampleInput" class="form-label text-black">Message</label>
+          <textarea class="form-control" placeholder="Enter Your Message here" 
+            style="height: 100px"id="message"></textarea>
+        </div>
+        <button type="button" class="btn btn-lg mt-3 text-white" style=" background-color: #1e30f3;"onclick="sendMail()">Submit</button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Project -->
+<div class="container-fluid p-0">
+  <footer class=" text-center text-lg-start bg-light text-muted mt-5">
+    <section class="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block text-black">
+        <span>Follow me on social networks :</span>
+      </div>
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram fa-xl" style="color: #ac2bac;""></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google fa-xl text-success"></i>
+        </a>
+        
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github fa-xl text-black"></i>
+        </a>
+      </div>
+    </section>
+  
+    <div class="text-center p-4 text-black" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class=" fw-bold " href="" style="color: #1e30f3;">Mr.Alongkorn Kaewprom</a>
+      
+    </div>
+  </footer>
+</div>
+<div class="cursor "></div>
+<div class="cursor2"></div>
+
+<button class="btn btn-floating btn-lg rounded-circle position-fixed bottom-0 end-0 translate-middle d-none" style=" background-color: #1e30f3;"
+  onclick="scrollToTop()" id="back-to-up">
+  <i class="fa fa-arrow-up text-white" aria-hidden="true"></i>
+</button>
+      
+<script>
+  $('.nav-link').on('click', function() {
+	$('.active-link').removeClass('active-link');
+	$(this).addClass('active-link');
+});
+</script>
+
+
+
+<script>
+  window.onscroll = () => {
+    toggleTopButton();
+  }
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function toggleTopButton() {
+    if (document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20) {
+      document.getElementById('back-to-up').classList.remove('d-none');
+    } else {
+      document.getElementById('back-to-up').classList.add('d-none');
+    }
+  }
+
+</script>
+
+<script src="index.js"></script>
+  
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#auto-type', {
+        strings: ["You must be the change you want to see in the world. You may never know what results come of your actions, but if you do nothing, there will be no results.", "Your time is limited, so don't waste it living someone else's life."],
+        typeSpeed: 20,
+        
+        loop: false
+      });
+    </script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+</body>
+</html>
