@@ -29,6 +29,30 @@ h1, h2 {
 }
 
 
+.offcanvas {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-header h5 {
+  color: #1e30f3;
+}
+
+.nav-link {
+  color: #1e30f3;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #e21e80;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+
 .img-profile {
   background-image: url(https://cdn.discordapp.com/attachments/1040912457994092584/1162674910456455238/profile-webport.png?ex=653ccc64&is=652a5764&hm=326c02115966be462ce5620cd8def3cfe1db1c77afe3dc1f77bdcfcf7868273e&);
   background-repeat: no-repeat;
