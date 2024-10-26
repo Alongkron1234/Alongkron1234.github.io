@@ -99,17 +99,53 @@ h1, h2 {
   margin-bottom: 1rem;
   font-weight: 700;
 }
-.home-img {
+
+.about-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px; /* Adjust width as needed */
+  aspect-ratio: 3/4; /* Keeps it slightly more vertical */
+  border-radius: 45% / 55%; /* Less rounded for a subtle oval */
   margin-bottom: 50px;
-  width: 100vw;
-  height: 100vw;
-  max-width: 400px;
-  max-height: 400px;
 }
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+.about-img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .about-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 
 
 .home-img img {
@@ -119,6 +155,8 @@ h1, h2 {
   border-radius: 50%;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
+
 
 .home-img img:hover {
   transform: scale(1.05);
@@ -423,3 +461,4 @@ a i:hover {
   max-height: 400px;
   object-fit: cover;
 }
+
